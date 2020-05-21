@@ -1,0 +1,6 @@
+{{#each stars as |star|}}
+    <a href="#" {{action "setRating" star.rating}}
+        class="star-rating">
+        {{if star.full 'X' 'O'}}
+    </a>
+{{/each}}
